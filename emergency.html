@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Transport</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Transport Services</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bus-selection.html">Bus Selection</a></li>
+            <li><a href="ticketing.html">Ticketing</a></li>
+            <li><a href="emergency.html">Emergency Transport</a></li>
+        </ul>
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="te">Telugu</option>
+            <option value="hi">Hindi</option>
+        </select>
+    </nav>
+    <section id="emergency">
+        <h2 data-en="Emergency Transport" data-te="అత్యవసర రవాణా" data-hi="आपातकालीन परिवहन">Emergency Transport</h2>
+        <p data-en="For emergency transport services, please call our hotline or fill out the form below." data-te="అత్యవసర రవాణా సేవల కోసం, దయచేసి మా హాట్‌లైన్‌కు కాల్ చేయండి లేదా దిగువ ఫారమ్‌ను పూరించండి." data-hi="आपातकालीन परिवहन सेवाओं के लिए, कृपया हमारी हॉटलाइन पर कॉल करें या नीचे दिए गए फॉर्म को भरें।">For emergency transport services, please call our hotline or fill out the form below.</p>
+        <form id="emergency-form">
+            <label for="location" data-en="Location" data-te="స్థానం" data-hi="स्थान">Location:</label>
+            <input type="text" id="location" name="location">
+            <button type="submit" data-en="Request Transport" data-te="రవాణా అభ్యర్థించండి" data-hi="परिवहन का अनुरोध करें">Request Transport</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
