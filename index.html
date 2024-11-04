@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation Services - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="C:\Users\ajith\OneDrive\Desktop\logo.jpg" alt="Transport Services Logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bus-selection.html">Bus Selection</a></li>
+            <li><a href="ticketing.html">Ticketing</a></li>
+            <li><a href="emergency.html">Emergency Transport</a></li>
+        </ul>
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="te">Telugu</option>
+            <option value="hi">Hindi</option>
+        </select>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1 data-en="Welcome to Our Transportation Service" data-te="మన రవాణా సేవకు స్వాగతం" data-hi="हमारी परिवहन सेवा में आपका स्वागत है">Welcome to Our Transportation Service</h1>
+        <p data-en="Select your bus, book tickets, and get real-time updates." data-te="మీ బస్సును ఎంచుకోండి, టిక్కెట్లు బుక్ చేయండి మరియు తక్షణ సమాచారాన్ని పొందండి." data-hi="अपनी बस चुनें, टिकट बुक करें, और वास्तविक समय अपडेट प्राप्त करें।">Select your bus, book tickets, and get real-time updates.</p>
+    </section>
+
+    <!-- Advertisement Section -->
+    <div id="ad-container"></div>
+
+    <!-- Tracking Section -->
+    <section id="tracking">
+        <h2 data-en="Track Your Bus" data-te="మీ బస్సును ట్రాక్ చేయండి" data-hi="अपनी बस का ट्रैक करें">Track Your Bus</h2>
+        <p data-en="Enter your bus number or route to get live tracking information." data-te="లైవ్ ట్రాకింగ్ సమాచారం కోసం మీ బస్సు నంబర్ లేదా మార్గాన్ని నమోదు చేయండి." data-hi="लाइव ट्रैकिंग जानकारी प्राप्त करने के लिए अपनी बस नंबर या मार्ग दर्ज करें।">Enter your bus number or route to get live tracking information.</p>
+        <input type="text" id="bus-number" placeholder="Enter Bus Number or Route">
+        <button onclick="trackBus()">Track</button>
+    </section>
+
+    <!-- Featured Services Section -->
+    <section id="featured-services">
+        <h2 data-en="Featured Services" data-te="ప్రధాన సేవలు" data-hi="विशेष सेवाएँ">Featured Services</h2>
+        <div class="service">
+            <h3 data-en="Comfortable Seating" data-te="కంఫర్టబుల్ సీటింగ్" data-hi="आरामदायक बैठने की सुविधा">Comfortable Seating</h3>
+            <p data-en="Experience the best in comfort and safety." data-te="కంఫర్ట్ మరియు భద్రతలో ఉత్తమమైనదాన్ని అనుభవించండి." data-hi="आराम और सुरक्षा में सबसे अच्छा अनुभव करें।">Experience the best in comfort and safety.</p>
+        </div>
+        <div class="service">
+            <h3 data-en="On-Time Arrivals" data-te="సమయానికి చేరుకోవడం" data-hi="समय पर आगमन">On-Time Arrivals</h3>
+            <p data-en="We ensure timely arrivals for all routes." data-te="మేము అన్ని మార్గాలకు సకాలంలో రాకలను నిర్ధారిస్తాము." data-hi="हम सभी मार्गों के लिए समय पर आगमन सुनिश्चित करते हैं।">We ensure timely arrivals for all routes.</p>
+        </div>
+        <div class="service">
+            <h3 data-en="Affordable Prices" data-te="అందుబాటు ధరలు" data-hi="किफायती कीमतें">Affordable Prices</h3>
+            <p data-en="Get the best services at the best prices." data-te="మంచి ధరలలో మంచి సేవలను పొందండి." data-hi="सर्वोत्तम कीमतों पर सर्वोत्तम सेवाएं प्राप्त करें।">Get the best services at the best prices.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="ads.js"></script>
+</body>
+</html>
