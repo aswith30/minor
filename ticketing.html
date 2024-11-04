@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Transport Services</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bus-selection.html">Bus Selection</a></li>
+            <li><a href="ticketing.html">Ticketing</a></li>
+            <li><a href="emergency.html">Emergency Transport</a></li>
+        </ul>
+        <select id="language-select" onchange="changeLanguage(this.value)">
+            <option value="en">English</option>
+            <option value="te">Telugu</option>
+            <option value="hi">Hindi</option>
+        </select>
+    </nav>
+    <section id="ticketing">
+        <h2 data-en="Ticketing" data-te="టికెట్లు" data-hi="टिकटिंग">Ticketing</h2>
+        <form id="ticket-form">
+            <label for="source" data-en="Source" data-te="మూలం" data-hi="स्रोत">Source:</label>
+            <input type="text" id="source" name="source">
+            <label for="destination" data-en="Destination" data-te="గమ్యం" data-hi="गंतव्य">Destination:</label>
+            <input type="text" id="destination" name="destination">
+            <label for="date" data-en="Date" data-te="తేదీ" data-hi="तारीख">Date:</label>
+            <input type="date" id="date" name="date">
+            <label for="time" data-en="Time" data-te="సమయం" data-hi="समय">Time:</label>
+            <input type="time" id="time" name="time">
+            <button type="submit" data-en="Book Ticket" data-te="టిక్కెట్ బుక్ చేయండి" data-hi="टिकट बुक करें">Book Ticket</button>
+        </form>
+        <div id="booking-confirmation">
+            <!-- Booking confirmation will be displayed here -->
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
